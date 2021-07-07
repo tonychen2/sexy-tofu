@@ -8,7 +8,7 @@ so the first step is to download and install [Node.js](https://nodejs.org/en/dow
 
 Then, open a new command line session, navigate to this directory, and install all requirements by:
 ```
-npm install packages.json
+npm install package.json
 ```
 
 To get the frontend running, simply execute
