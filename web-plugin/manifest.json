@@ -1,19 +1,35 @@
 {
-	"name": "Sexy Tofu Chrome Plugin",
+	"name": "Sexy Tofu Carbon Calculator",
+	"description": "TODO: Sexy tofu site related extension tool for help user with carbon emmsion fee calcuation.",
 	"version": "1.0",
 	"manifest_version": 3,
 	"background": {
-		"service_worker": "background.js"
+		"service_worker": "./js/background.js"
 	},
+	"permissions": [
+		"storage",
+		"alarms"
+	],
 	"action": {
-		"default_icon": {
-		},
-		"default_popup": "no-food.html",
+		"default_icon": {},
+		"default_popup": "./popup/empty.html",
 		"default_title": "Sexy Tofu"
 	},
 	"icons": {
-		"16": "16x16.png",
-		"48": "48x48.png",
-		"128": "128x128.png"
-	}
+		"16": "./img/16x16.png",
+		"48": "./img/48x48.png",
+		"128": "./img/128x128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://www.instacart.com/store/*"
+			],
+			"js": [
+				"./js/jquery-3.6.0.min.js",
+				"./js/common.js",
+				"./js/content.js"
+			]
+		}
+	]
 }

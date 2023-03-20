@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<header>
+    <script defer src="../js/jquery-3.6.0.min.js"></script>
+    <script defer src="../js/common.js"></script>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</header>
+
+<body>
+    <h2 style="font-size:26px; text-align: center;">Demo for change cart items</h2>
+    <div style="display:flex;width: 300px;margin: auto;">
+        <div style="width: 140px;text-align: left;font-weight: bold;">
+            <span style="display: block;">Name:</span>
+            <span style="display: block;">Quantity:</span>
+        </div>
+        <div style="width: auto;">
+            <input id="name" placeholder="Input the Food name..." />
+            <input type="number" id="quan" placeholder="Input the Quantity..." />
+        </div>
+    </div>
+    <div style="margin: auto; margin-top: 10px; border: 2px dotted lightgray; border-width:0px 0px 2px 0px ;
+        width: 300px ;padding-bottom: 10px;">
+        <button id="addItem">Add Item</button>
+        <button id="clear" style="margin-left: 80px;">Clear Cart</button>
+    </div>
+    <div style="margin: auto; margin-top: 10px; width: 350px; ">
+        <input id="badgeText" placeholder="input badge text" />
+        <button id="btnText" class="bigButton">Set badge Text</button>
+        <input id="txtColor" placeholder="show text color here" />
+        <button id="btnTxtColor" class="smallBtn">Text Color</button>
+        <button id="btnTxtRdm" class="smallBtn">Random Set</button>
+        <input id="badgeColor" placeholder="show badge color here" />
+        <button id="btnColor" class="smallBtn">Back Color</button>
+        <button id="btnBackRdm" class="smallBtn">Random Set</button>
+        <div style="display:inline-flex; text-align: left;">
+            <span style="width: 177px;font-weight: bold;">Please select a status:</span>
+        </div>
+        <select id="sel_Popup" name="popupST" style="width: 120px" default="empty">
+            <option value="" selected>Select Status</option>
+            <option value="empty">Empty</option>
+            <option value="offset">Offset</option>
+            <option value="error">Error</option>
+        </select>
+    </div>
+    <div style="text-align: left; 
+    width: 300px; margin: auto;margin-top: 20px;display: flex;flex-direction: column;
+    border: 2px dotted lightgray; border-width:2px 0px 0px 0px ;
+    padding-bottom: 10px;">
+        <span>1. Unit defaut to each/ea. </span>
+        <span>2. non-food item will not got carbon emission.</span>
+        <span>3. set color please input valid color like: red, #FEFEFE</span>
+    </div>
+
+    <div style="margin: auto; text-align: left; width: 400px; 
+        border: 2px gray; border-style: ridge; padding: 3px;">
+        <b>Current Cart Info:</b><br>
+        Total Items: <span id="count">12</span><br>
+        Timestamp: <span id="timeInfo">333</span>
+        <pre id="display2" class="display2"></pre>
+    </div>
+</body>

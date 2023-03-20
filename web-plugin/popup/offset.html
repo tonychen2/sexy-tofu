@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="offset.css">
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div class="BoardContainer">
+		<div class="txtbubble">
+			<img src="../img/dither-tofu.png" class="tofuIcon" />
+			<div class="triangle">&nbsp;</div>
+			<div class="frame606">
+				<span id="bubbleTxt">Calculating... Please wait...</span>
+			</div>
+		</div>
+
+		<div class="close">
+			<img src="../img/close.svg" />
+		</div>
+
+		<div class="container">
+			<!--insert make cart carbon neutral image-->
+			<div class="total-emission">
+				<h3>Carbon Emission</h3>
+				<!--insert co2 calculation-->
+				<span class="DispValue">···</span>
+				<span class="DispExText"> lbs of CO2</span>
+			</div>
+			<div class="offset-cost">
+				<h3>Carbon Offset Cost</h3>
+				<!--insert offset cost calculation-->
+				<span class="DispValue">···</span>
+			</div>
+		</div>
+		<div class="form-container">
+			<!--link to payment method (is this going to be another website?)-->
+			<input type="submit" id='paymentBtn' value="I want to offset" class="offset" disabled/>
+			<hr>
+			<!--link to projects website (for now, it's google)-->
+			<input type="submit" id="learnMoreBtn" value="Learn about carbon offsetting projects" class="projects" />
+		</div>
+	</div>
+	<script defer src="../js/common.js"></script>
+	<script defer src="../js/popup.js"></script>
+</body>
+
+</html>

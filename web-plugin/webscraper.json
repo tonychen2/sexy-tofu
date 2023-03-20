@@ -1,0 +1,35 @@
+{
+    "_id": "instacart",
+    "startUrl": ["https://www.instacart.com/store/sprouts/storefront"],
+    "selectors": [
+    {
+        "id": "pages",
+        "parentSelectors": ["_root", "pages"],
+        "paginationType": "auto",
+        "selector": " button.css-elibrt-ListHeaderPageButton",
+        "type": "SelectorPagination"
+    },
+    {
+        "id": "name",
+        "parentSelectors": ["elements"],
+        "type": "SelectorText",
+        "selector": "span.css-2b0q20",
+        "multiple": false,
+        "regex": ""
+    },
+    {
+        "id": "unit",
+        "parentSelectors": ["elements"],
+        "type": "SelectorText",
+        "selector": "div.css-1301wpr-Size",
+        "multiple": false,
+        "regex": ""
+    },
+    {
+        "id": "elements",
+        "parentSelectors": ["_root", "pages"],
+        "type": "SelectorElement",
+        "selector": ".css-15xw5nk > div:nth-of-type(2)",
+        "multiple": true
+    }]
+}

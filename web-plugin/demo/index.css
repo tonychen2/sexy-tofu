@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Light.ttf);
+}
+
+body {
+  text-align: center;
+  font-family: Poppins, "Courier New", Courier, monospace;
+  font-size: 75%;
+}
+
+span {
+  margin-top: 5px;
+}
+
+input {
+  margin-top: 5px;
+}
+
+.bigButton {
+  width: 120px;
+}
+
+.smallBtn {
+  width: 59px;
+}
+
+.display1,.display2{
+    align-self: center;
+    font-size: 12px;
+    word-wrap: normal;
+    white-space: pre-wrap;
+}

@@ -1,0 +1,157 @@
+body {
+  border-radius: 10px;
+  font-family: Poppins;
+}
+
+.BoardContainer {
+  width: 352px;
+  /* height: 352px; */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* background-color: blue; */
+  text-align: center;
+  padding: 16px;
+  padding-bottom: 8px;
+}
+
+.container {
+  display: flex;
+  margin-left: 0px;
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+
+.total-emission, .offset-cost{
+  flex: 1;
+  text-align: left;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Light.ttf);
+}
+
+.txtbubble {
+  /* Text bubble */
+  height: 32px;
+
+  /* Inside auto layout */
+  display: flex;
+  order: 1;
+  flex-grow: 0;
+}
+
+.tofuIcon {
+  height: 48px;
+  /* margin-top: -10px; */
+}
+
+.frame606 {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 4px 7px;
+  gap: 10px;
+
+  margin-top: 20px;
+  margin-left: 25px;
+  position: absolute;
+
+  height: 21px;
+  left: 64px;
+  top: 13px;
+
+  /* Neutral/Container */
+  background-color: #f6f5f7;
+  color: #786e84;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.triangle {
+  margin-top: 30.5px;
+  margin-left: 6px;
+  width: 15px;
+  height: 10.5px;
+  background-repeat: no-repeat;
+  outline: 0px solid F6F5F7;
+  background-image: linear-gradient(
+    -40deg,
+    #f6f5f7 50%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+input {
+  width: 352px;
+  height: 40px;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 9px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.offset {
+  background-color: #f15cb7;
+  border-color: #f15cb7;
+  color: white;
+}
+
+.offset[disabled] {
+  background-color: #FACAE8 !important;
+}
+
+.projects {
+  background-color: white;
+  border-color: #f15cb7;
+  color: #f15cb7;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.close {
+  float: right;
+  margin-top: -15px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+hr {
+  width: 351px;
+  color: #dbd8de;
+  /* height: 2px; */
+  /* border-style:inset; */
+}
+
+.DispValue {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1c0c30;
+}
+
+.DispExText {
+  margin-left: 5px;
+  color: #786e84;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+span {
+  padding: 3px;
+  font-size: 11px;
+}
